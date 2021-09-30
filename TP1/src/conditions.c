@@ -6,38 +6,43 @@
 #include <stdio.h> // headers
 
 int main() {
-char sw = 'c';
-switch (sw) {
-    case 'a' : {
-        int nb = 0;
-        while(nb <= 1000) {
-            if ((nb%2==0) && (nb%15==0)) {
-                printf("%d\n",nb);
+    printf("Quelle condition voulez-vous exécuter ?\nLa condition (a,b ou c) : ");
+    char sw;
+    scanf("%c",&sw);
+    switch (sw) {
+        // Partie condition A
+        case 'a' : {
+            int nb = 0;
+            while(nb <= 1000) {
+                if ((nb%2==0) && (nb%15==0)) {
+                    printf("%d\n",nb);
+                }
+                nb++;
             }
-            nb++;
+            break;
         }
-        break;
-    }
-    case 'b' : {
-        int nb = 0;
-        while(nb <= 1000) {
-            if ((nb%103==0) || (nb%107==0)) {
-                printf("%d\n",nb);
+        case 'b' : {
+        // Partie condition B
+            int nb = 0;
+            while(nb <= 1000) {
+                if ((nb%103==0) || (nb%107==0)) {
+                    printf("%d\n",nb);
+                }
+                nb++;
             }
-            nb++;
+            break;
         }
-        break;
-    }
-    case 'c' : {
-        int nb = 0;
-        while(nb <= 1000) {
-            if ((nb%7==0) || (nb%5==0)) {
-                if (nb%3!=0) {
-                printf("%d\n",nb);
-            }}
-            nb++;
-        }
-        break;
-}}
-return 0;
+        case 'c' : {
+        // Partie condition C
+            int nb = 0;
+            while(nb <= 1000) {
+                if ((nb%7==0) || (nb%5==0)) {
+                    if (nb%3!=0) {
+                    printf("%d\n",nb);
+                }}
+                nb++;
+            }
+            break;
+    }}
+    return 0;
 }

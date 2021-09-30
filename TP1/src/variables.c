@@ -1,4 +1,4 @@
-/* Fichier: 
+/* Fichier: variables.c
 * permet d'afficher les différents types de variables
 * auteur: Luc Anchling
 */

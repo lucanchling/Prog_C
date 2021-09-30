@@ -1,4 +1,4 @@
-/* Fichier: 
+/* Fichier: opérateurs2.c
 * permet d'appréhender les différents opérateurs avec deux variables
 * auteur: Luc Anchling
 */

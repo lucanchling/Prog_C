@@ -1,4 +1,4 @@
-/* Fichier: 
+/* Fichier: sizeof_types.c
 * permet d'afficher la taille des différents types de base (en octets).
 * auteur: Luc Anchling
 */
