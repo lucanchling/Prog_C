@@ -17,14 +17,13 @@ int main() {
     printf("%d\t",u0);
     printf("%d\t",u0);
     // Partie gestion de la suite de Fibonacci
-    int un,unplus1,unplus2;
+    long long int un,unplus1,unplus2;
     un=u0;unplus1=u1;
     for (int cpt=0; cpt<n-2; cpt++) {
         unplus2 = un+unplus1;
         un=unplus1;
         unplus1=unplus2;
-        printf("%d\t",unplus2);
+        printf("%lli\n",unplus2);
     }
-    printf("\n");
     return 0;
 }
