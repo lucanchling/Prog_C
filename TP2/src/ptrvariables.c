@@ -42,7 +42,7 @@ int main() {
 
     // Partie Affichage en utilisant les pointeurs :
     printf("Pour la variable de type char : \n");
-    printf("addr : %p\tvalue : %c\taddr : %p\n", my_char_addr,*my_char_addr);
+    printf("addr : %p\tvalue : %c\taddr : \n", my_char_addr,*my_char_addr);
     printf("Pour la variable de type short : \n");
     printf("addr : %p\tvalue : %hd\n", my_short_addr,*my_short_addr);
     printf("Pour la variable de type int : \n");
