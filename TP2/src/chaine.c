@@ -23,13 +23,13 @@ int main() {
     // Concaténation de deux chaines de caractères
     char c1[] = "Bonjour le monde";
     char c2[] = " Je suis Luc";
-    char chaine3[sizeof(c1) + sizeof(c2) -1];
+    char chaine3[sizeof(c1) + sizeof(c2) -1];   // Définition de la var pour concaténer les 2 chaines
     for (int cpt=0;cpt<sizeof(c1)+sizeof(c2);cpt++) {
-        
-        if (cpt<=sizeof(c1)) {
+        // Dans cette technique il faut absolument éviter le premier '\0' --> ce qui est permis ici !
+        if (cpt<=sizeof(c1)) {  // Pour remplir la new var avec le first str
             chaine3[cpt] = c1[cpt];
             }
-        if (cpt>sizeof(c1)-1) {
+        if (cpt>sizeof(c1)-1) { // Pour remplir la new var avec le second str
             chaine3[cpt-1] = c2[cpt-sizeof(c1)];
         }
     }

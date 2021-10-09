@@ -1,15 +1,19 @@
 # Bibliothèques
-* 
-*
+* stdio.h
+* math.h
+* stdlib.h
+* string.h
+* time.h
 
 # Références
-*
-*
+* koor.fr/C
+* stackoverflow.com
+* programiz.com
 
 # Difficulté
-*
+* 
 
 # Commentaires
-* 
+* J'ai juste pas compris comment enlever les warning dans tableauptr.c
 * 
 

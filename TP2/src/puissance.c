@@ -13,7 +13,7 @@ int main() {
     scanf("%d",&b);
     int result = 1;
     for (int cpt = 1; cpt<=b;cpt++) {   // Boucle pour le calcul de la puissance
-        result = result*a;
+        result = result*a;  // Incrémentation de la valeur du résultat au fur et à mesure des multiplications
     }
     printf("a^b = %d\n",result);    // Affichage du résultat
     return 0;

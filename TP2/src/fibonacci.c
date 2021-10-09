@@ -1,4 +1,4 @@
-/* Fichier: bits.c
+/* Fichier: fibonacci.c
 * permet d'écrire la suite de Fibonacci
 * auteur: Luc Anchling
 */
@@ -19,6 +19,7 @@ int main() {
     // Partie gestion de la suite de Fibonacci
     long long int un,unplus1,unplus2;
     un=u0;unplus1=u1;
+    // Calcul des différents termes de la suite
     for (int cpt=0; cpt<n-2; cpt++) {
         unplus2 = un+unplus1;
         un=unplus1;

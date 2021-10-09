@@ -14,7 +14,7 @@ int main() {
     printf("Nombre d'étudiants : ");
     scanf("%d",&nbetudiant);
     
-    // Création du tableau
+    // Création du tableau avec la fonction struct
     struct students {
     char nom[10];
     int noteA;
