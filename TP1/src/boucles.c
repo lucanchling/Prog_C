@@ -1,4 +1,4 @@
-/* Fichier: 
+/* Fichier: boucles.c
 * permet d'afficher un triangle rectangle de la forme :
     *              
     * *               
@@ -7,6 +7,8 @@
     * * * * *
 * auteur: Luc Anchling
 */
+
+// Il faut "décommenter" la boucle pour pouvoir la tester 
 
 #include <stdio.h> // headers
 

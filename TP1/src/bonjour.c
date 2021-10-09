@@ -1,4 +1,4 @@
-/* Fichier: bonjour1.c
+/* Fichier: bonjour.c
 * permet d'afficher 'Bonjour le Monde' à l'écran.
 * auteur: Luc Anchling
 */

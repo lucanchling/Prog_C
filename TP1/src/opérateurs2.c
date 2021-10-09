@@ -9,7 +9,7 @@ int main() {
     int num1 = 5;
     int num2 = 10;
     char op = '*';
-    switch (op) {
+    switch (op) {   // Switch pour demander à l'utilisateur quel oppération à effectuer
         case '+':printf("num1+num2%d\n",num1+num2);
         case '-':printf("num1-num2=%d\n",num1-num2);
         case '*':printf("num1*num2=%d\n",num1*num2);
