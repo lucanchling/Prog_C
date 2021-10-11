@@ -19,10 +19,12 @@ int main() {
         tableau[c]=rand()%100;
         printf("%d\t",tableau[c]);
     }
+    
+    // Partie pour déterminer si elle est présente ou non
     printf("\nQuelle valeur souhaitez-vous chercher ?\nValue = ");
     scanf("%d",&value);
     for (int c=0;c<size;c++) {
-        if (value==tableau[c]) {
+        if (value==tableau[c]) {    // Si elle est présente on change la valeur du str à afficher
             sortie = "Entier Présent";
         }
     }

@@ -28,8 +28,8 @@ int main() {
         for (j = 0;j<size-1;j++) {
             int value1 = tab[j];
             int value2 = tab[j+1];
-            if (value1>value2) {
-                tab[j]=value2;
+            if (value1>value2) {    // Si deux valeurs succesives ne sont pas dans le bon ordre
+                tab[j]=value2;      // On les alterne
                 tab[j+1]=value1;
             }
         }

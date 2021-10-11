@@ -21,7 +21,7 @@ int main() {
         printf("%d\t",tab[c]);
     }
 
-    // Partie tri du tableau
+    // Partie tri du tableau nécessaire pour la recherche dichotomique
     int j;
     for (int i=0;i<size;i++) {
         for (j = 0;j<size-1;j++) {
@@ -39,12 +39,14 @@ int main() {
     scanf("%d",&value);
 
     // Recherche Dichotomique :
+    // Déclaration des différents indices
     int start = 0;
     int end = size;
     int mil;
-    char *sortie = "Entier non Présent";
+    char *sortie = "Entier non Présent";    // Fait office de booléen test pour la boucle et permet aussi l'affichage de sortie
     while ((sortie!="Entier Présent") & (start<=end)) {
-        mil = floor((end+start)/2);
+        mil = floor((end+start)/2); // Pour subdiviser l'intervalle de recherche par deux 
+        // Différents tests pour trouver le prochain intervalle à observer
         if (value==tab[mil]) {
             sortie = "Entier Présent";
         }
