@@ -37,7 +37,7 @@ int main() {
     // Partie Affichage 
     printf("Pour la variable short :\n");
     for (int i = 0;i<sizeof(short);i++) {
-        printf("%hhx ",*(my_short_addr+i));
+        printf("%hhx ",*(my_short_addr+i)); // Affichage en hexa des différents octets en utilisant le pointeur
     }
 
     printf("\nPour la variable int :\n");
