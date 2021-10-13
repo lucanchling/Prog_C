@@ -8,6 +8,8 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <string.h>
+
 
 void lire_fichier(char *nom_de_fichier) {
     int fd = open(nom_de_fichier,O_RDONLY);
@@ -15,8 +17,8 @@ void lire_fichier(char *nom_de_fichier) {
         printf("ON A PAS PU OUVRIR LE FICHIER\n");
     }
     while(1) {
-        char c[10];
-        int size = (int) read(fd,c,1);
+        char c[50];
+        int size = read(fd,c,1);
         if (size<1) {
             break;
         }
@@ -28,6 +30,6 @@ void lire_fichier(char *nom_de_fichier) {
 
 void ecrire_dans_fichier(char *nom_de_fichier, char *message){
     int fd = open(nom_de_fichier, O_WRONLY|O_APPEND);
-    int size = write(fd, message,sizeof(message));
+    int size = write(fd, message,strlen(message));
     close(fd);
 }

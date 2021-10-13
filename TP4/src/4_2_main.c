@@ -8,12 +8,12 @@
 #include "fichier.h"
 
 int main() {
-    char nom_de_fichier[50];
+    char nom_de_fichier[10];
     printf("Quel fichier voulez-vous ouvrir ?\n");
     scanf("%s",nom_de_fichier);
     printf("Dans le fichier, il y a actuellement :\n");
     lire_fichier(nom_de_fichier);
-    char message[100];
+    char message[10];
     printf("Que voulez-vous ajouter dedans :\n");
     scanf("%s",message);
     ecrire_dans_fichier(nom_de_fichier,message);
