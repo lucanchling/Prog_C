@@ -31,7 +31,9 @@ void lire_dossier(char *rep) {
 
 }
 
-
+void lire_dossier_reccursif(char *rep) {
+    
+}
 
 int main(){
 	char rep[100];

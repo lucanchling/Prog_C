@@ -3,4 +3,5 @@
 * auteur: Luc Anchling
 */
 
-void lire_dossier(char *)
+void lire_dossier(char *);
+void lire_dossier_reccursif(char *);
