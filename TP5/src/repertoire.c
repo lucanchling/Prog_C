@@ -2,26 +2,43 @@
 * permet de parcourir le dossier et d'afficher les noms des fichiers
 * auteur: Luc Anchling
 */
-#include <stdio.h>
+
+#include<stdio.h>
 #include <stdlib.h>
 #include <dirent.h>
 #include <errno.h>
+#include"repertoire.h"
 
-int main(int argc, char *argv[])
-{
-    DIR *dp;
-    struct dirent *dirp;
+void lire_dossier(char *rep) {
+	DIR *dp;
+	dp = opendir(rep);
+	if (dp==NULL) {
+		return;
+	}
 
-    if (argc != 2) {
-        fprintf(stderr, "Usage: ./program directory_name\n");
-        exit(EXIT_FAILURE);
-    }
+	struct dirent *dirp;
+	
+	while(1) {
+		dirp = readdir(dp);
+		if (dirp==NULL){
+			break;	
+		}
+		printf("%s\n", dirp-> d_name);
+	}
+//(*dirp).d_name == dirp -> d_name
 
-    dp = opendir(argv[1]);
 
-    while ((dirp = readdir(dp)) != NULL)
-        printf("%s\n", dirp->d_name);
 
-    closedir(dp);
-    exit(EXIT_SUCCESS);
+}
+
+
+
+int main(){
+	char rep[100];
+	printf("Dans quel répertoire\n");
+	scanf("%s", rep);
+	lire_dossier(rep);
+
+
+	return 0;
 }
