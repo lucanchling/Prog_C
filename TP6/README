@@ -1,13 +1,17 @@
 # Bibliothèques
-* 
-*
+* stdio.h
+* math.h
+* stdlib.h
+* string.h
+* time.h
 
 # Références
-*
-*
+* koor.fr/C
+* stackoverflow.com
+* programiz.com
 
 # Difficulté
-*
+* Pas réussi la partie JSON... du coup j'ai tout erase cette partie parce que ça ajoutait des erreurs qui empechait la compilation
 
 # Commentaires
 * 
