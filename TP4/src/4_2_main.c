@@ -1,5 +1,5 @@
 /* Fichier: 4_2_main.c
-* permet de manipuler des fichiers en écriture et en lecture
+* permet de manipuler des fichiers en écriture et en lecture pour l'exercice 4.2 
 * auteur: Luc Anchling
 */
 

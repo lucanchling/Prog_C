@@ -18,7 +18,7 @@ struct students {
 };
 
 int main() {
-    
+    // Remplissage du tableau
     struct students etudiants[3];
 
     strcpy(etudiants[0].prenom,"Luc");
@@ -36,6 +36,7 @@ int main() {
     strcpy(etudiants[2].adresse,"20 Boulevard de la Joie");
     strcpy(etudiants[2].ville,"Lyon");
 
+    // Pour écrire le contenu du tableau dans un .txt en utilisant les fonctions precedemment creees
     char *nom_de_fichier = "etudiant.txt";
     for (int i = 0; i<3;i++) {
         char *message = etudiants[i].prenom;

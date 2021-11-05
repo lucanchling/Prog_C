@@ -7,13 +7,14 @@
 #include <stdio.h>
 
 int main() {
+    // Pour demander à l'utilisateur l'opération à effectuer
     int a,b;
     char op;
     printf("a = ");
     scanf("%d",&a);
     printf("b = ");
     scanf("%d",&b);
-    getchar(); 
+    getchar();  // Permet de "manger" un caractère pour pouvoir selectionner l'opérateur
     printf("opérateur = ");
     scanf("%c",&op);
     

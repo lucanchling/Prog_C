@@ -1,13 +1,17 @@
 # Bibliothèques
-* 
-*
+* stdio.h
+* math.h
+* stdlib.h
+* string.h
+* time.h
 
 # Références
-*
-*
+* koor.fr/C
+* stackoverflow.com
+* programiz.com
 
 # Difficulté
-*
+* vers la fin du TP --> yep
 
 # Commentaires
 * 
