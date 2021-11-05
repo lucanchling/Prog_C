@@ -16,5 +16,7 @@
  * en retour
  */
 int recois_envoie_message(int socketfd);
+float recois_numeros_calcule(char*,int);
+char* fctnEtudiant();
 
 #endif

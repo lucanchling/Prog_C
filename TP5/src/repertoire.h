@@ -5,3 +5,4 @@
 
 void lire_dossier(char *);
 void lire_dossier_reccursif(char *);
+void lire_dossier_iteratif(char *);
